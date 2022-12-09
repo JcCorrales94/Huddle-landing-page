@@ -1,0 +1,188 @@
+@use 'global' as g;
+@use 'normalize';
+
+// ? Globales
+
+html{
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: content-box;
+} 
+img{
+  max-width: 100%;
+}
+
+
+
+.header{
+  background-image: url(../../images/bg-hero-mobile.svg);
+  background-color: g.$neutral-pale-cyan;
+  width: 100%;
+  height: 70rem;
+  div{
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    .header__img{
+      transform: scale(0.5);
+      position: relative;
+      bottom: -1rem;
+      left:-6rem;
+      margin-right: auto
+    }
+    .header__button{
+      padding: 0.5rem 2rem;
+      border: none;
+      font-size: 1.2rem;
+      background-color: g.$neutral-white;
+      border-radius: 5rem;
+      box-shadow: 0rem 0rem 3.5rem 0.1rem  #00000045 ;
+      @include g.general;
+      font-weight: 700;     
+    }
+  }
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -58rem;
+  .heard{
+    text-align: center;
+    .heard__left-side{
+      .heard__left-side--tittle{
+        @include g.tittle;
+        font-size: 2.6rem;
+        line-height: 1.5;
+        color: g.$neutral-dark-cyan;
+      }
+      .heard__left-side--paragraph{
+        @include g.general;
+        font-size: 1.65rem;
+        margin-bottom: 0;
+        color: g.$neutral-dark-cyan;
+      }
+      .heard__left-side--button{
+        font-size: 1.6rem;
+        @include g.general;
+        border: none;
+        color: g.$neutral-white;
+        background-color: g.$primary-pink;
+        border-radius: 5rem;
+        margin: 5rem 0;
+        padding: 1rem 4rem;
+      }
+    }
+  }
+  .ilustraitor{
+    margin: 10rem 0rem;
+    @include g.general;
+    .ilustraitor__block{
+      box-shadow: 0rem 0rem 1.5rem 0.1rem  #00000016 ;
+      border-radius: 1rem;
+      text-align: center;
+      @include g.general;
+      padding: 3rem;
+      margin-bottom: 5rem;
+      .ilustraitor__block--left-side{
+        img{
+          transform: scale(0.8);
+        }
+        .ilustraitor__block--tittle{
+          @include g.general;
+          font-size: 2.2rem;
+          color: g.$neutral-dark-cyan;
+        }
+        .ilustraitor__block--paragraph{
+          font-size: 1.3rem;
+          color: g.$neutral-grayish-blue;
+        }
+      }
+    }
+    .ilustraitor__block-small{
+      box-shadow: 0rem 0rem 1.5rem 0.1rem  #00000016 ;
+      background-color: g.$neutral-white;
+      border-radius: 1rem;
+      text-align: center;
+      @include g.general;
+      padding: 4rem 2rem;
+      position: relative;
+      top: 4rem;
+      z-index: 10;
+      .ilustraitor__block--tittle{
+        font-size: 1.6rem;
+        color: g.$neutral-dark-cyan;
+      }
+      .ilustraitor__block--button{
+        background-color: g.$primary-pink;
+        border: none;
+        padding: 1rem 3rem;
+        color: g.$neutral-white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        border-radius: 5rem;
+      }
+    }
+  }
+}
+.footer{
+  background-color: g.$neutral-dark-cyan;
+  position: relative;
+  top: -70rem;
+  padding-top: 10rem;
+  img{
+    transform: scale(0.6) translateX(-25%);
+  }
+  .footer__space-info{
+    .footer__space-info--contact{
+      display: flex;
+      align-items: center;
+      width: 95%;
+      gap:2rem;
+      padding: 1.2rem;
+      @include g.general;
+      color: g.$neutral-white;
+      .footer__space-info--img{
+        width: 3rem;
+        height: 3rem;
+      }
+      .footer__space-info--data{
+        font-size: 1.4rem;
+        margin: 0;
+      }
+    }
+  }
+    .footer__space-link{
+      display: flex;
+      flex-direction: column; 
+      padding: 1.2rem;
+      gap: 2rem;
+    .footer__space-link--link{
+      color: g.$neutral-white;
+      font-size: 1.6rem;
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+  .footer__space-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__space-social--container{
+      .footer_space-social{
+        font-size: 2rem;
+        margin-inline: 1rem;
+        color: g.$neutral-white;
+      }
+    }
+    p{
+      color: g.$neutral-white;
+    } 
+  }
+  div{
+    color: g.$neutral-white;
+  }
+}

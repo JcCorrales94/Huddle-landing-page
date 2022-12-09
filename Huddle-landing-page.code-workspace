@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Formacion/Programación/CodeHouse/mi código"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Huddle-landing-page"
+	}
+}
